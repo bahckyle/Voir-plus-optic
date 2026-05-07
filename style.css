@@ -317,7 +317,42 @@ input.error, select.error, textarea.error { border-color: #e53e3e; }
 .contact-info-value { color: var(--dark); font-weight: 500; }
 .contact-info-value a { color: var(--blue); }
 .contact-info-value a:hover { color: var(--green); }
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    animation: pulse 1.5s infinite;
+}
 
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float img {
+    width: 35px;
+    height: 35px;
+}
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37,211,102,0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37,211,102,0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37,211,102,0);
+    }
+}
 /* ━━━━━━━━━━ FOOTER ━━━━━━━━━━ */
 #footer { background: #010212; padding: 72px 0 0; color: rgba(255,255,255,.7); }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.2fr; gap: 48px; padding-bottom: 56px; }
