@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services & Produits | Voir + Optic — Cotonou & Calavi</title>
+  <meta name="description" content="Découvrez tous les services de Voir + Optic : examens de vue, lunettes, lentilles, réparations. Parcourez notre catalogue produits avec les prix en FCFA." />
+  <meta property="og:title" content="Services & Produits | Voir + Optic" />
+  <meta property="og:description" content="Examens de vue, lunettes de vue, solaires, lentilles de contact et accessoires optiques à Cotonou et Calavi, Bénin." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ━━━━━━━━ MOBILE MENU ━━━━━━━━ -->
+<nav class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Menu mobile">
+  <button class="mobile-close" id="mobileClose" aria-label="Fermer">✕</button>
+  <a href="index.html" class="mobile-link">Accueil</a>
+  <a href="services.html" class="mobile-link">Services & Produits</a>
+  <a href="about.html" class="mobile-link">Notre Cabinet</a>
+  <a href="contact.html" class="mobile-link">Contact</a>
+  <a href="contact.html" class="btn btn-green" style="margin-top:12px;">Prendre RDV</a>
+</nav>
+
+<!-- ━━━━━━━━ NAVBAR ━━━━━━━━ -->
+<header id="navbar" role="banner">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo" aria-label="Voir + Optic — Accueil">Voir <span>+</span> Optic</a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="services.html" class="active-page">Services & Produits</a>
+      <a href="about.html">Notre Cabinet</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-green nav-cta">Prendre RDV</a>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ━━━━━━━━ PAGE HERO ━━━━━━━━ -->
+<section class="page-hero" aria-label="Services et produits">
+  <div class="hero-bg-img" role="img" aria-label="Cabinet d'optique Voir + Optic"></div>
+  <div class="hero-bg-overlay"></div>
+  <div class="container page-hero-content">
+    <span class="page-hero-tag">Ce que nous proposons</span>
+    <h1 class="page-hero-title">Nos services<br />& <em>nos produits</em></h1>
+    <p class="page-hero-sub">Une offre complète pour votre santé visuelle — prestations expertes, catalogue de produits et marques premium disponibles à Cotonou et à Calavi.</p>
+    <div class="page-hero-breadcrumb" aria-label="Fil d'ariane">
+      <a href="index.html">Accueil</a>
+      <span aria-hidden="true">›</span>
+      <span>Services & Produits</span>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━━━━━━ SERVICES ━━━━━━━━ -->
+<section id="services" aria-label="Nos services">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag-label">Nos prestations</span>
+      <h2 class="section-title">Nos <span class="green-accent">services</span></h2>
+      <p class="section-subtitle">Une gamme complète de prestations optiques pour toute la famille, assurées par des professionnels diplômés d'État.</p>
+      <span class="section-line" aria-hidden="true"></span>
+    </div>
+    <div class="services-grid">
+
+      <article class="service-card reveal">
+        <!--
+          IMAGE SERVICE 1 — EXAMEN DE VUE
+          Remplacez le src par votre image locale.
+          Fichier suggéré : images/service-examen-vue.jpg
+          Dimensions recommandées : 600×400px, JPG ou WebP.
+        -->
+        <div class="service-img">
+          <img src="images/service-examen-vue.webp" alt="Examen de vue — opticien réalisant un bilan visuel" />
+        </div>
+        <div class="service-body">
+          <h3 class="service-title">Examen de la vue</h3>
+          <p class="service-desc">Bilan visuel complet réalisé par notre opticien diplômé : mesure de la réfraction, contrôle de la pression oculaire et dépistage d'anomalies visuelles. Gratuit sur rendez-vous.</p>
+          <a href="contact.html" class="service-link">Prendre RDV <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="service-card reveal" style="transition-delay:.1s">
+        <!--
+          IMAGE SERVICE 2 — LUNETTES DE VUE
+          Fichier suggéré : images/service-lunettes-vue.jpg
+          Dimensions recommandées : 600×400px.
+        -->
+        <div class="service-img">
+          <img src="images/service-lunettes-vue.jpg" alt="Lunettes de vue — large sélection de montures" />
+        </div>
+        <div class="service-body">
+          <h3 class="service-title">Lunettes de vue</h3>
+          <p class="service-desc">Plus de 300 montures sélectionnées pour tous les styles et budgets : classique, tendance, sport, enfant. Verres correcteurs de haute qualité, progressifs ou unifocaux.</p>
+          <a href="#products" class="service-link">Voir les produits <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="service-card reveal" style="transition-delay:.2s">
+        <!--
+          IMAGE SERVICE 3 — LUNETTES SOLAIRES
+          Fichier suggéré : images/service-lunettes-solaires.jpg
+          Dimensions recommandées : 600×400px.
+        -->
+        <div class="service-img">
+          <img src="images/service-lunettes-solaires.webp" alt="Lunettes solaires avec protection UV" />
+        </div>
+        <div class="service-body">
+          <h3 class="service-title">Lunettes solaires</h3>
+          <p class="service-desc">Protégez vos yeux sous le soleil béninois : verres polarisants, protection UV 400, montures tendance avec ou sans correction visuelle.</p>
+          <a href="#products" class="service-link">Voir les produits <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="service-card reveal" style="transition-delay:.2s">
+        <!--
+          IMAGE SERVICE 5 — BILAN VISUEL ENFANT
+          Fichier suggéré : images/service-enfant.jpg
+          Dimensions recommandées : 600×400px.
+        -->
+        <div class="service-img">
+          <img src="images/service-enfant.webp" alt="Bilan visuel enfant — opticien avec enfant" />
+        </div>
+        <div class="service-body">
+          <h3 class="service-title">Bilan visuel enfant</h3>
+          <p class="service-desc">Dépistage précoce des troubles visuels dès 3 ans. Un suivi doux et adapté à chaque étape du développement de votre enfant, dans un cadre bienveillant.</p>
+          <a href="contact.html" class="service-link">Prendre RDV <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="service-card reveal" style="transition-delay:.3s">
+        <!--
+          IMAGE SERVICE 6 — RÉPARATIONS
+          Fichier suggéré : images/service-reparation.jpg
+          Dimensions recommandées : 600×400px.
+        -->
+        <div class="service-img">
+          <img src="images/service-reparation.jpg" alt="Réparation et entretien de lunettes" />
+        </div>
+        <div class="service-body">
+          <h3 class="service-title">Réparations & Entretien</h3>
+          <p class="service-desc">Réglage, nettoyage ultrason, remplacement de branches et de plaquettes. Remise en état rapide de vos lunettes, souvent le jour même.</p>
+          <a href="contact.html" class="service-link">Nous contacter <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ━━━━━━━━ PRODUCTS ━━━━━━━━ -->
+<section id="products" aria-label="Nos produits">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag-label">Notre catalogue</span>
+      <h2 class="section-title">Nos <span class="green-accent">produits</span></h2>
+      <p class="section-subtitle">Découvrez notre sélection complète de montures, lentilles et accessoires optiques — des prix transparents pour chaque budget.</p>
+      <span class="section-line" aria-hidden="true"></span>
+    </div>
+
+    <!-- Filtres -->
+    <div class="products-filters reveal" role="group" aria-label="Filtrer les produits">
+      <button class="filter-btn active" data-filter="all">Tout voir</button>
+      <button class="filter-btn" data-filter="vue">Lunettes de vue</button>
+      <button class="filter-btn" data-filter="solaire">Lunettes solaires</button>
+      <button class="filter-btn" data-filter="accessoire">Accessoires</button>
+    </div>
+
+    <div class="products-grid" id="productsGrid">
+
+      <!-- ── LUNETTES DE VUE ── -->
+      <div class="product-card reveal" data-category="vue">
+        <!--
+          IMAGE PRODUIT : Monture Classique Rectangulaire
+          Fichier suggéré : images/produit-monture-classique.webp — 500×400px
+        -->
+        <div class="product-img">
+          <img src="images/produit-monture-classique.webp" alt="Monture classique rectangulaire" />
+          <span class="product-badge">Populaire</span>
+        </div>
+        <div class="product-body">
+          <p class="product-cat">Lunettes de vue</p>
+          <h3 class="product-name">Monture Classique Rectangulaire</h3>
+          <p class="product-desc">Monture acétate légère, polyvalente, convient à tous les visages. Avec verres progressifs ou unifocaux.</p>
+          <div class="product-footer">
+            <div class="product-price">15 000 <span>FCFA</span></div>
+            <button class="product-btn" aria-label="Demander un renseignement pour Monture Classique Rectangulaire">Demander</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal" data-category="vue" style="transition-delay:.05s">
+        <!--
+          IMAGE PRODUIT : Monture Ronde Vintage
+          Fichier suggéré : images/produit-monture-ronde.webp — 500×400px
+        -->
+        <div class="product-img">
+          <img src="images/produit-monture-ronde.webp" alt="Monture ronde vintage dorée" />
+        </div>
+        <div class="product-body">
+          <p class="product-cat">Lunettes de vue</p>
+          <h3 class="product-name">Monture Ronde Vintage</h3>
+          <p class="product-desc">Monture métal fine, style rétro tendance. Idéale pour un look élégant et moderne au quotidien.</p>
+          <div class="product-footer">
+            <div class="product-price">18 000 <span>FCFA</span></div>
+            <button class="product-btn" aria-label="Demander un renseignement pour Monture Ronde Vintage">Demander</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal" data-category="vue" style="transition-delay:.1s">
+        <!--
+          IMAGE PRODUIT : Monture Enfant Flexible
+          Fichier suggéré : images/produit-monture-enfant.jpg — 500×400px
+        -->
+        <div class="product-img">
+          <img src="images/produit-monture-enfant.jpg" alt="Lunettes enfant flexibles colorées" />
+          <span class="product-badge">Enfant</span>
+        </div>
+        <div class="product-body">
+          <p class="product-cat">Lunettes de vue</p>
+          <h3 class="product-name">Monture Enfant Flexible</h3>
+          <p class="product-desc">Ultra-résistante et incassable. Matière mémoire de forme, sécurisée pour les 3–12 ans.</p>
+          <div class="product-footer">
+            <div class="product-price">12 000 <span>FCFA</span></div>
+            <button class="product-btn" aria-label="Demander un renseignement pour Monture Enfant Flexible">Demander</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal" data-category="vue" style="transition-delay:.15s">
+        <!--
+          IMAGE PRODUIT : Monture Titane Sans-cerclage
+          Fichier suggéré : images/produit-monture-titane.webp — 500×400px
+        -->
+        <div class="product-img">
+          <img src="images/produit-monture-titane.webp" alt="Monture premium titane sans cerclage" />
+          <span class="product-badge">Premium</span>
+        </div>
+        <div class="product-body">
+          <p class="product-cat">Lunettes de vue</p>
+          <h3 class="product-name">Monture Titane Sans-cerclage</h3>
+          <p class="product-desc">Légèreté extrême (2g), discrétion maximale. Titane hypoallergénique de haute qualité.</p>
+          <div class="product-footer">
+            <div class="product-price">35 000 <span>FCFA</span></div>
+            <button class="product-btn" aria-label="Demander un renseignement pour Monture Titane Sans-cerclage">Demander</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── LUNETTES SOLAIRES ── -->
+      <div class="product-card reveal" data-category="solaire">
+        <!--
+          IMAGE PRODUIT : Solaire Aviateur Polarisant
+          Fichier suggéré : images/produit-solaire-aviateur.jpg — 500×400px
+        -->
+        <div class="product-img">
+          <img src="images/produit-solaire-aviateur.jpg" alt="Lunettes solaires aviateur polarisantes" />
+          <span class="product-badge">UV 400</span>
+        </div>
+        <div class="product-body">
+          <p class="product-cat">Lunettes solaires</p>
+          <h3 class="product-name">Solaire Aviateur Polarisant</h3>
+          <p class="product-desc">Verres polarisants anti-reflets. Protection UV 400 certifiée. Style aviateur intemporel.</p>
+          <div class="product-footer">
+            <div class="product-price">20 000 <span>FCFA</span></div>
+            <button class="product-btn" aria-label="Demander un renseignement pour Solaire Aviateur Polarisant">Demander</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal" data-category="solaire" style="transition-delay:.15s">
+        <!--
+          IMAGE PRODUIT : Solaire Enfant Protecteur
+          Fichier suggéré : images/produit-solaire-enfant.webp — 500×400px
+        -->
+        <div class="product-img">
+          <img src="images/produit-solaire-enfant.webp" alt="Lunettes solaires enfant avec protection totale" />
+          <span class="product-badge">Enfant</span>
+        </div>
+        <div class="product-body">
+          <p class="product-cat">Lunettes solaires</p>
+          <h3 class="product-name">Solaire Enfant Protecteur</h3>
+          <p class="product-desc">Protection UV totale pour les plus jeunes. Monture souple, légère, cordons de maintien inclus.</p>
+          <div class="product-footer">
+            <div class="product-price">10 000 <span>FCFA</span></div>
+            <button class="product-btn" aria-label="Demander un renseignement pour Solaire Enfant Protecteur">Demander</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal" data-category="accessoire" style="transition-delay:.05s">
+        <!--
+          IMAGE PRODUIT : Kit Nettoyage Optique
+          Fichier suggéré : images/produit-kit-nettoyage.webp — 500×400px
+        -->
+        <div class="product-img">
+          <img src="images/produit-kit-nettoyage.webp" alt="Spray nettoyant lunettes avec lingette microfibre" />
+        </div>
+        <div class="product-body">
+          <p class="product-cat">Accessoires</p>
+          <h3 class="product-name">Kit Nettoyage Optique</h3>
+          <p class="product-desc">Spray nettoyant anti-bactérien 100ml + 20 lingettes microfibre. Idéal pour tous types de verres.</p>
+          <div class="product-footer">
+            <div class="product-price">2 000 <span>FCFA</span></div>
+            <button class="product-btn" aria-label="Demander un renseignement pour Kit Nettoyage Optique">Demander</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal" data-category="accessoire" style="transition-delay:.1s">
+        <!--
+          IMAGE PRODUIT : Cordon Lunettes Tressé
+          Fichier suggéré : images/produit-cordon.webp — 500×400px
+        -->
+        <div class="product-img">
+          <img src="images/produit-cordon.webp" alt="Cordon lunettes tressé élégant" />
+        </div>
+        <div class="product-body">
+          <p class="product-cat">Accessoires</p>
+          <h3 class="product-name">Cordon Lunettes Tressé</h3>
+          <p class="product-desc">Cordon réglable en coton tressé. Élégant et pratique pour porter vos lunettes autour du cou.</p>
+          <div class="product-footer">
+            <div class="product-price">1 500 <span>FCFA</span></div>
+            <button class="product-btn" aria-label="Demander un renseignement pour Cordon Lunettes Tressé">Demander</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ━━━━━━━━ BRANDS ━━━━━━━━ -->
+<section id="brands" aria-label="Marques partenaires">
+  <div class="container">
+    <div class="brands-header reveal">
+      <span class="tag-label">Sélection premium</span>
+      <h2 class="section-title">Des marques <span class="green-accent">de confiance</span></h2>
+      <span class="section-line" aria-hidden="true"></span>
+    </div>
+  </div>
+  <div class="brands-track-wrapper">
+    <div class="brands-track" aria-label="Marques partenaires">
+      <span class="brand-item">Ray-Ban</span><span class="brand-sep">◆</span>
+      <span class="brand-item">MEGAPOLIS</span><span class="brand-sep">◆</span>
+      <span class="brand-item">RICO MIRADO</span><span class="brand-sep">◆</span>
+      <span class="brand-item">OUTIKA</span><span class="brand-sep">◆</span>
+      <span class="brand-item">Persol</span><span class="brand-sep">◆</span>
+      <span class="brand-item">Lindberg</span><span class="brand-sep">◆</span>
+      <span class="brand-item">GAOZI</span><span class="brand-sep">◆</span>
+      <span class="brand-item">Zeiss</span><span class="brand-sep">◆</span>
+      <!-- Doublon pour défilement infini CSS -->
+      <span class="brand-item">Ray-Ban</span><span class="brand-sep">◆</span>
+      <span class="brand-item">MEGAPOLIS</span><span class="brand-sep">◆</span>
+      <span class="brand-item">RICO MIRADO</span><span class="brand-sep">◆</span>
+      <span class="brand-item">OUTIKA</span><span class="brand-sep">◆</span>
+      <span class="brand-item">Persol</span><span class="brand-sep">◆</span>
+      <span class="brand-item">Lindberg</span><span class="brand-sep">◆</span>
+      <span class="brand-item">GAOZI</span><span class="brand-sep">◆</span>
+      <span class="brand-item">Zeiss</span><span class="brand-sep">◆</span>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━━━━━━ CTA ━━━━━━━━ -->
+<section id="cta-band" aria-label="Appel à l'action">
+  <div class="container cta-content reveal">
+    <h2 class="cta-band-title">Un produit vous intéresse ?<br />Contactez-<em style="color:#6ee89e;font-style:italic;">nous.</em></h2>
+    <p class="cta-band-sub">Nos équipes à Cotonou et Calavi sont disponibles pour répondre à toutes vos questions.</p>
+    <a href="contact.html" class="btn btn-green" style="font-size:1rem;padding:16px 44px;">Nous contacter →</a>
+    <p class="cta-band-note">Sans engagement &nbsp;•&nbsp; Réponse sous 24h &nbsp;•&nbsp; Examen de vue gratuit sur RDV</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ━━━━━━━━ FOOTER ━━━━━━━━ -->
+<footer id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Voir <span>+</span> Optic</div>
+        <p class="footer-desc">Cabinet d'optique professionnel au Bénin. La clarté, une priorité — à Cotonou et à Calavi depuis plus de 10 ans.</p>
+        <div class="footer-social" aria-label="Réseaux sociaux">
+          <a href="https://www.facebook.com/voirplusoptic" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/voirplusoptic" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="rgba(255,255,255,.7)"/></svg></a>
+          <a href="https://wa.me/+22942749495" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="rgba(255,255,255,.7)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12.004 2C6.477 2 2 6.477 2 12.004a9.98 9.98 0 0 0 1.316 4.994L2 22l5.129-1.299A9.962 9.962 0 0 0 12.004 22C17.523 22 22 17.523 22 12.004 22 6.477 17.523 2 12.004 2zm0 18.15a8.13 8.13 0 0 1-4.14-1.131l-.297-.177-3.046.771.8-2.962-.196-.308A8.152 8.152 0 0 1 3.85 12.004C3.85 7.49 7.49 3.85 12.004 3.85c4.514 0 8.15 3.64 8.15 8.154 0 4.514-3.636 8.146-8.15 8.146z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services & Produits</a></li>
+          <li><a href="about.html">Notre Cabinet</a></li>
+          <li><a href="contact.html">Contact & RDV</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Nos services</h4>
+        <ul>
+          <li><a href="services.html#services">Examen de la vue</a></li>
+          <li><a href="services.html#services">Lunettes de vue</a></li>
+          <li><a href="services.html#services">Lunettes solaires</a></li>
+          <li><a href="services.html#services">Bilan visuel enfant</a></li>
+          <li><a href="services.html#services">Réparations</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Nos sites</h4>
+        <ul>
+          <li><a href="tel:+22955630473">📍 Cotonou — +229 55 63 04 73</a></li>
+          <li><a href="tel:+22955630473">📍 Calavi — +229 55 63 04 73</a></li>
+          <li><a href="mailto:contact@voirplusoptic.bj">✉ contact@voirplusoptic.bj</a></li>
+        </ul>
+        <ul style="margin-top:20px;">
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Voir + Optic — Cotonou & Calavi, Bénin. Tous droits réservés.</span>
+      <div style="display:flex;gap:20px;">
+        <a href="#">Mentions légales</a>
+        <a href="#">Confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* ── Navbar scroll ── */
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  /* ── Mobile menu ── */
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileMenu  = document.getElementById('mobileMenu');
+  const mobileClose = document.getElementById('mobileClose');
+  document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', closeMobile));
+  hamburgerBtn.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('open');
+    hamburgerBtn.classList.toggle('open', open);
+    hamburgerBtn.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  mobileClose.addEventListener('click', closeMobile);
+  function closeMobile() {
+    mobileMenu.classList.remove('open');
+    hamburgerBtn.classList.remove('open');
+    hamburgerBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  /* ── Filtres produits ── */
+  const filterBtns  = document.querySelectorAll('.filter-btn');
+  const productCards = document.querySelectorAll('#productsGrid .product-card');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      productCards.forEach(card => {
+        const show = filter === 'all' || card.dataset.category === filter;
+        card.style.display = show ? '' : 'none';
+        if (show) setTimeout(() => card.classList.add('visible'), 10);
+        else card.classList.remove('visible');
+      });
+    });
+  });
+
+  /* ── Boutons "Demander" → pré-remplit le formulaire de contact ── */
+  productCards.forEach(card => {
+    const btn = card.querySelector('.product-btn');
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+      const name = card.querySelector('.product-name').textContent;
+      sessionStorage.setItem('produit_demande', name);
+      window.location.href = 'contact.html?produit=' + encodeURIComponent(name);
+    });
+  });
+
+  /* ── Intersection Observer : reveal ── */
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

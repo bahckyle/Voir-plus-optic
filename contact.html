@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & RDV | Voir + Optic — Cotonou & Calavi</title>
+  <meta name="description" content="Contactez Voir + Optic ou prenez rendez-vous en ligne. Deux cabinets au Bénin : Cotonou et Calavi. Réponse garantie sous 24h." />
+  <meta property="og:title" content="Contact & RDV | Voir + Optic" />
+  <meta property="og:description" content="Prenez rendez-vous ou posez vos questions à notre équipe d'opticiens à Cotonou et Calavi, Bénin." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ━━━━━━━━ MOBILE MENU ━━━━━━━━ -->
+<nav class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Menu mobile">
+  <button class="mobile-close" id="mobileClose" aria-label="Fermer">✕</button>
+  <a href="index.html" class="mobile-link">Accueil</a>
+  <a href="services.html" class="mobile-link">Services & Produits</a>
+  <a href="about.html" class="mobile-link">Notre Cabinet</a>
+  <a href="contact.html" class="mobile-link">Contact</a>
+  <a href="contact.html" class="btn btn-green" style="margin-top:12px;">Prendre RDV</a>
+</nav>
+
+<!-- ━━━━━━━━ NAVBAR ━━━━━━━━ -->
+<header id="navbar" role="banner">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo" aria-label="Voir + Optic — Accueil">Voir <span>+</span> Optic</a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services & Produits</a>
+      <a href="about.html">Notre Cabinet</a>
+      <a href="contact.html" class="active-page">Contact</a>
+      <a href="contact.html" class="btn btn-green nav-cta">Prendre RDV</a>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ━━━━━━━━ PAGE HERO ━━━━━━━━ -->
+<section class="page-hero" aria-label="Contact">
+  <div class="hero-bg-img" role="img" aria-label="Cabinet d'optique Voir + Optic"></div>
+  <div class="hero-bg-overlay"></div>
+  <div class="container page-hero-content">
+    <span class="page-hero-tag">Restons en contact</span>
+    <h1 class="page-hero-title">Prendre <em>rendez-vous</em><br />ou nous écrire</h1>
+    <p class="page-hero-sub">Notre équipe à Cotonou et à Calavi est à votre disposition. Remplissez le formulaire ou contactez directement l'un de nos cabinets — réponse garantie sous 24h.</p>
+    <div class="page-hero-breadcrumb" aria-label="Fil d'ariane">
+      <a href="index.html">Accueil</a>
+      <span aria-hidden="true">›</span>
+      <span>Contact</span>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━━━━━━ CONTACT ━━━━━━━━ -->
+<section id="contact" aria-label="Formulaire de contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag-label">Formulaire de contact</span>
+      <h2 class="section-title">Envoyez-nous <span class="green-accent">un message</span></h2>
+      <p class="section-subtitle">Remplissez ce formulaire pour toute demande de rendez-vous, renseignement produit ou question générale.</p>
+      <span class="section-line" aria-hidden="true"></span>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- ── Formulaire ── -->
+      <div class="reveal">
+        <form id="contactForm" novalidate aria-label="Formulaire de contact et prise de RDV">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="prenom">Prénom *</label>
+              <input type="text" id="prenom" name="prenom" placeholder="Aimée" required autocomplete="given-name" />
+              <span class="error-msg" id="err-prenom">Veuillez saisir votre prénom.</span>
+            </div>
+            <div class="form-group">
+              <label for="nom">Nom *</label>
+              <input type="text" id="nom" name="nom" placeholder="Dossou" required autocomplete="family-name" />
+              <span class="error-msg" id="err-nom">Veuillez saisir votre nom.</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Adresse e-mail *</label>
+            <input type="email" id="email" name="email" placeholder="aimee@email.bj" required autocomplete="email" />
+            <span class="error-msg" id="err-email">Veuillez saisir une adresse e-mail valide.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="tel">Téléphone *</label>
+            <input type="tel" id="tel" name="tel" placeholder="+229 97 00 00 00" required autocomplete="tel" />
+            <span class="error-msg" id="err-tel">Veuillez saisir votre numéro de téléphone.</span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="site">Site souhaité *</label>
+              <select id="site" name="site" required>
+                <option value="">— Choisissez —</option>
+                <option value="cotonou">Cotonou</option>
+                <option value="calavi">Calavi</option>
+              </select>
+              <span class="error-msg" id="err-site">Veuillez choisir un site.</span>
+            </div>
+            <div class="form-group">
+              <label for="objet">Objet de la demande *</label>
+              <select id="objet" name="objet" required>
+                <option value="">— Choisissez —</option>
+                <option value="rdv">Prise de rendez-vous</option>
+                <option value="produit">Renseignement produit</option>
+                <option value="urgence">Urgence optique</option>
+                <option value="autre">Autre</option>
+              </select>
+              <span class="error-msg" id="err-objet">Veuillez sélectionner un objet.</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Décrivez votre demande en détail..."></textarea>
+          </div>
+
+          <div class="rgpd-row">
+            <input type="checkbox" id="rgpd" name="rgpd" required />
+            <label for="rgpd">J'accepte que mes données personnelles soient utilisées pour traiter ma demande conformément à la <a href="#" style="color:var(--blue);">politique de confidentialité</a> de Voir + Optic. *</label>
+          </div>
+          <span class="error-msg" id="err-rgpd" style="margin-bottom:14px;">Vous devez accepter la politique de confidentialité pour continuer.</span>
+
+          <button type="submit" class="btn btn-blue" style="width:100%;justify-content:center;font-size:1rem;">
+            Envoyer ma demande
+          </button>
+
+          <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+            ✅ Votre demande a bien été envoyée ! Nous vous recontacterons dans les 24h ouvrables.
+          </div>
+
+        </form>
+      </div>
+
+      <!-- ── Informations de contact ── -->
+      <div class="contact-info reveal" style="transition-delay:.15s">
+
+        <h3 style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;color:var(--blue);margin-bottom:28px;">
+          Contactez-nous <span class="green-accent">directement</span>
+        </h3>
+
+        <!-- Cotonou -->
+        <div style="background:var(--white);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);margin-bottom:20px;">
+          <p style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--blue);margin-bottom:16px;">
+            📍 Site de Cotonou
+          </p>
+          <div class="contact-info-item" style="margin-bottom:12px;">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Adresse</div>
+              <div class="contact-info-value">Cotonou, Maromilitaire à 100 M de la clinique Les Grâces<br />Cotonou, Bénin</div>
+            </div>
+          </div>
+          <div class="contact-info-item" style="margin-bottom:12px;">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Téléphone</div>
+              <div class="contact-info-value"><a href="tel:+22955630473">+229 55 63 04 73</a></div>
+            </div>
+          </div>
+          <div class="contact-info-item" style="margin-bottom:0;">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Horaires</div>
+              <div class="contact-info-value">Lun–Ven : 8h00 – 19h00<br />Samedi : 9h00 – 18h00<br />Dimanche : <span style="color:#e53e3e;">Fermé</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Calavi -->
+        <div style="background:var(--white);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);margin-bottom:28px;">
+          <p style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--blue);margin-bottom:16px;">
+            📍 Site de Calavi
+          </p>
+          <div class="contact-info-item" style="margin-bottom:12px;">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Adresse</div>
+              <div class="contact-info-value">Calavi, Carrefour Iita , avant la pharmacie<br />Abomey-Calavi, Bénin</div>
+            </div>
+          </div>
+          <div class="contact-info-item" style="margin-bottom:12px;">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Téléphone</div>
+              <div class="contact-info-value"><a href="tel:+22955630473">+229 55 63 04 73</a></div>
+            </div>
+          </div>
+          <div class="contact-info-item" style="margin-bottom:0;">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Horaires</div>
+              <div class="contact-info-value">Lun–Ven : 8h30 – 19h00<br />Samedi : 9h00 – 18h00<br />Dimanche : <span style="color:#e53e3e;">Fermé</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Email & réseaux -->
+        <div class="contact-info-item">
+          <div class="contact-info-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-label">E-mail général</div>
+            <div class="contact-info-value"><a href="mailto:contact@voirplusoptic.bj">contact@voirplusoptic.bj</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━━━━━━ FAQ RAPIDE ━━━━━━━━ -->
+<section style="padding:80px 0;background:var(--white);" aria-label="Questions fréquentes">
+  <div class="container">
+    <div class="section-header reveal" style="text-align:center;">
+      <span class="tag-label" style="display:block;text-align:center;">Réponses rapides</span>
+      <h2 class="section-title" style="text-align:center;">Questions <span class="green-accent">fréquentes</span></h2>
+      <span class="section-line" style="margin:16px auto 0;" aria-hidden="true"></span>
+    </div>
+    <div style="max-width:740px;margin:0 auto;" class="reveal">
+
+      <details style="background:var(--bg);border-radius:var(--radius);padding:20px 24px;margin-bottom:14px;cursor:pointer;">
+        <summary style="font-weight:600;color:var(--blue);font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          L'examen de vue est-il vraiment gratuit ?
+          <span style="color:var(--green);font-size:1.3rem;line-height:1;">+</span>
+        </summary>
+        <p style="color:var(--gray);font-size:.92rem;margin-top:14px;line-height:1.7;">Oui, le bilan visuel est entièrement gratuit pour tout rendez-vous pris dans l'un de nos deux cabinets à Cotonou ou à Calavi. Aucun achat n'est obligatoire à l'issue de la consultation.</p>
+      </details>
+
+      <details style="background:var(--bg);border-radius:var(--radius);padding:20px 24px;margin-bottom:14px;cursor:pointer;">
+        <summary style="font-weight:600;color:var(--blue);font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          Combien de temps dure une consultation ?
+          <span style="color:var(--green);font-size:1.3rem;line-height:1;">+</span>
+        </summary>
+        <p style="color:var(--gray);font-size:.92rem;margin-top:14px;line-height:1.7;">Un bilan visuel complet dure en moyenne 30 à 45 minutes. Si vous souhaitez également choisir une monture ou des lentilles, prévoyez environ 1h30 pour un accompagnement confortable et sans précipitation.</p>
+      </details>
+
+      <details style="background:var(--bg);border-radius:var(--radius);padding:20px 24px;margin-bottom:14px;cursor:pointer;">
+        <summary style="font-weight:600;color:var(--blue);font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          Acceptez-vous les mutuelles et assurances santé ?
+          <span style="color:var(--green);font-size:1.3rem;line-height:1;">+</span>
+        </summary>
+        <p style="color:var(--gray);font-size:.92rem;margin-top:14px;line-height:1.7;">Nous travaillons avec la majorité des complémentaires santé disponibles au Bénin. Contactez-nous pour vérifier la prise en charge de votre mutuelle avant votre rendez-vous.</p>
+      </details>
+
+      <details style="background:var(--bg);border-radius:var(--radius);padding:20px 24px;margin-bottom:14px;cursor:pointer;">
+        <summary style="font-weight:600;color:var(--blue);font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          À partir de quel âge peut-on faire un bilan visuel ?
+          <span style="color:var(--green);font-size:1.3rem;line-height:1;">+</span>
+        </summary>
+        <p style="color:var(--gray);font-size:.92rem;margin-top:14px;line-height:1.7;">Nous proposons des bilans visuels dès l'âge de 3 ans. Il est recommandé de faire contrôler la vision des enfants régulièrement, car certains troubles peuvent passer inaperçus et affecter la scolarité.</p>
+      </details>
+
+      <details style="background:var(--bg);border-radius:var(--radius);padding:20px 24px;margin-bottom:0;cursor:pointer;">
+        <summary style="font-weight:600;color:var(--blue);font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+          Puis-je venir sans rendez-vous ?
+          <span style="color:var(--green);font-size:1.3rem;line-height:1;">+</span>
+        </summary>
+        <p style="color:var(--gray);font-size:.92rem;margin-top:14px;line-height:1.7;">Vous pouvez passer sans rendez-vous pour l'achat d'accessoires, une réparation rapide ou un renseignement. En revanche, pour un bilan visuel ou une adaptation de lentilles, nous recommandons de prendre rendez-vous pour vous garantir un suivi optimal.</p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ━━━━━━━━ FOOTER ━━━━━━━━ -->
+<footer id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Voir <span>+</span> Optic</div>
+        <p class="footer-desc">Cabinet d'optique professionnel au Bénin. La clarté, une priorité — à Cotonou et à Calavi depuis plus de 10 ans.</p>
+        <div class="footer-social" aria-label="Réseaux sociaux">
+          <a href="https://www.facebook.com/voirplusoptic" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/voirplusoptic" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="rgba(255,255,255,.7)"/></svg></a>
+          <a href="https://wa.me/+22942749495" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="rgba(255,255,255,.7)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12.004 2C6.477 2 2 6.477 2 12.004a9.98 9.98 0 0 0 1.316 4.994L2 22l5.129-1.299A9.962 9.962 0 0 0 12.004 22C17.523 22 22 17.523 22 12.004 22 6.477 17.523 2 12.004 2zm0 18.15a8.13 8.13 0 0 1-4.14-1.131l-.297-.177-3.046.771.8-2.962-.196-.308A8.152 8.152 0 0 1 3.85 12.004C3.85 7.49 7.49 3.85 12.004 3.85c4.514 0 8.15 3.64 8.15 8.154 0 4.514-3.636 8.146-8.15 8.146z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services & Produits</a></li>
+          <li><a href="about.html">Notre Cabinet</a></li>
+          <li><a href="contact.html">Contact & RDV</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Nos services</h4>
+        <ul>
+          <li><a href="services.html#services">Examen de la vue</a></li>
+          <li><a href="services.html#services">Lunettes de vue</a></li>
+          <li><a href="services.html#services">Lunettes solaires</a></li>
+          <li><a href="services.html#services">Bilan visuel enfant</a></li>
+          <li><a href="services.html#services">Réparations</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Nos sites</h4>
+        <ul>
+          <li><a href="tel:+22955630473">📍 Cotonou — +229 55 63 04 73</a></li>
+          <li><a href="tel:+22955630473">📍 Calavi — +229 55 63 04 73</a></li>
+          <li><a href="mailto:contact@voirplusoptic.bj">✉ contact@voirplusoptic.bj</a></li>
+        </ul>
+        <ul style="margin-top:20px;">
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Voir + Optic — Cotonou & Calavi, Bénin. Tous droits réservés.</span>
+      <div style="display:flex;gap:20px;">
+        <a href="#">Mentions légales</a>
+        <a href="#">Confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* ── Navbar scroll ── */
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  /* ── Mobile menu ── */
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileMenu  = document.getElementById('mobileMenu');
+  const mobileClose = document.getElementById('mobileClose');
+  document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', closeMobile));
+  hamburgerBtn.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('open');
+    hamburgerBtn.classList.toggle('open', open);
+    hamburgerBtn.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  mobileClose.addEventListener('click', closeMobile);
+  function closeMobile() {
+    mobileMenu.classList.remove('open');
+    hamburgerBtn.classList.remove('open');
+    hamburgerBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  /* ── Pré-remplissage depuis services.html ──
+     Si l'URL contient ?produit=NomDuProduit, on pré-remplit le champ message. */
+  (function () {
+    const params = new URLSearchParams(window.location.search);
+    const produit = params.get('produit');
+    if (produit) {
+      const objetSelect = document.getElementById('objet');
+      const messageArea = document.getElementById('message');
+      if (objetSelect) objetSelect.value = 'produit';
+      if (messageArea) messageArea.value =
+        `Bonjour, je souhaite avoir plus d'informations sur le produit : "${produit}".`;
+    }
+  })();
+
+  /* ── Validation temps réel ── */
+  function showError(id, show) {
+    const el = document.getElementById('err-' + id);
+    if (el) el.classList.toggle('show', show);
+  }
+  function markField(id, valid) {
+    const el = document.getElementById(id);
+    if (el) el.classList.toggle('error', !valid);
+  }
+
+  ['prenom', 'nom', 'email', 'tel', 'site', 'objet'].forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.addEventListener('input', () => {
+      let valid = el.value.trim().length > 0;
+      if (id === 'email') valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value.trim());
+      markField(id, valid);
+      showError(id, !valid);
+    });
+  });
+
+  /* ── Soumission formulaire ── */
+  const form       = document.getElementById('contactForm');
+  const successBox = document.getElementById('formSuccess');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let ok = true;
+
+    const fields = [
+      { id: 'prenom', check: v => v.length > 0 },
+      { id: 'nom',    check: v => v.length > 0 },
+      { id: 'email',  check: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) },
+      { id: 'tel',    check: v => v.length >= 8 },
+      { id: 'site',   check: v => v.length > 0 },
+      { id: 'objet',  check: v => v.length > 0 },
+    ];
+
+    fields.forEach(f => {
+      const el    = document.getElementById(f.id);
+      const val   = el.value.trim();
+      const valid = f.check(val);
+      markField(f.id, valid);
+      showError(f.id, !valid);
+      if (!valid) ok = false;
+    });
+
+    const rgpd   = document.getElementById('rgpd');
+    const rgpdOk = rgpd.checked;
+    document.getElementById('err-rgpd').style.display = rgpdOk ? 'none' : 'block';
+    if (!rgpdOk) ok = false;
+
+    if (ok) {
+      form.style.display = 'none';
+      successBox.classList.add('show');
+      /* Réinitialisation après 7 secondes */
+      setTimeout(() => {
+        form.style.display  = 'block';
+        successBox.classList.remove('show');
+        form.reset();
+      }, 7000);
+    }
+  });
+
+  /* ── FAQ accordion — comportement natif <details> amélioré ── */
+  document.querySelectorAll('details').forEach(det => {
+    det.addEventListener('toggle', () => {
+      const icon = det.querySelector('summary span');
+      if (icon) icon.textContent = det.open ? '−' : '+';
+    });
+  });
+
+  /* ── Intersection Observer : reveal ── */
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer  = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
